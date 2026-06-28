@@ -2,9 +2,9 @@
 
 Netflix Ratings Overlay is a production-minded Manifest V3 Chrome Extension that injects IMDb, Rotten Tomatoes, and Metacritic-style ratings into Netflix title modals. It uses a lightweight MutationObserver content script, background service-worker fetching, duplicate modal detection, and a two-layer cache so modal updates stay quick and the extension works immediately in deterministic mock mode.
 
-## Reference Extension
+## Published Extension
 
-Comparable Chrome Web Store listing: [Netflix Rater: IMDb, Rotten Tomatoes, Metacritic](https://chromewebstore.google.com/detail/netflix-rater-imdb-rotten/gglglkfgbgihjjldilpjeoimcnodopcc?hl=en)
+Published on the Chrome Web Store: [Netflix Rater: IMDb, Rotten Tomatoes, Metacritic](https://chromewebstore.google.com/detail/netflix-rater-imdb-rotten/gglglkfgbgihjjldilpjeoimcnodopcc?hl=en)
 
 ![Netflix ratings badge preview](docs/assets/netflix-rater-badge-preview.png)
 
