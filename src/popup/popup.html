@@ -1,0 +1,41 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Netflix Ratings Overlay</title>
+    <script type="module" src="./popup.ts"></script>
+  </head>
+  <body>
+    <main class="nro-popup">
+      <header class="nro-popup__header">
+        <div>
+          <p class="nro-kicker">Netflix</p>
+          <h1>Ratings Overlay</h1>
+        </div>
+        <span id="providerMode" class="nro-provider">mock</span>
+      </header>
+
+      <section class="nro-panel">
+        <label class="nro-switch">
+          <span>Overlay enabled</span>
+          <input id="enabled" type="checkbox" />
+        </label>
+        <label class="nro-switch">
+          <span>Debug logging</span>
+          <input id="debug" type="checkbox" />
+        </label>
+      </section>
+
+      <section class="nro-panel nro-stats">
+        <div><span>Cache hits</span><strong id="cacheHits">0</strong></div>
+        <div><span>Cache misses</span><strong id="cacheMisses">0</strong></div>
+        <div><span>Last title</span><strong id="lastTitle">-</strong></div>
+        <div><span>Last latency</span><strong id="lastLatency">-</strong></div>
+      </section>
+
+      <button id="clearCache" type="button">Clear cache</button>
+      <p id="status" class="nro-status" aria-live="polite"></p>
+    </main>
+  </body>
+</html>
